@@ -1,0 +1,471 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    /* background: linear-gradient(to right, #6a11cb, #2575fc); */
+    font-family: Garamond, serif;
+
+    margin: 0;
+
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo {
+/* 
+    color: #fff;
+    background: linear-gradient(to right, #9f9f9f 0, #fff 10%, rgba(21, 114, 211, 1) 20%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    white-space: nowrap; */
+
+
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0;
+    }
+
+    60% {
+        background-position: 180px;
+    }
+
+    100% {
+        background-position: 180px;
+    }
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+
+nav {
+
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 19px;
+    font-weight: 600;
+    align-items: center;
+
+}
+
+
+nav a {
+font-size: 19px;
+text-decoration: none;
+color: rgb(255, 255, 255);
+padding: 10px 5px;
+
+}
+
+
+
+nav ul li a:hover {
+color:rgb(0, 0, 0);
+border-bottom: 4px solid rgb(255, 255, 255);
+
+font-family: 'copperplate gothic';
+text-transform: uppercase;
+font-weight: bolder;
+font-weight: 900;
+z-index: -1;
+content: '';
+height: 100%;
+width: 100%;
+left: 0;
+top: 0;
+
+border-color: rgb(255, 230, 0);
+color: white;
+box-shadow: 0 0.6em 0.6em -0.3em rgb(255, 5, 5);
+transform: translateY(-0.3em);
+
+
+}
+
+nav ul li a::before {
+position: absolute;
+color: #ffd277;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 8px;
+transition-duration: 1s;
+background-color: rgba(0, 0, 0, 0.842);
+background-size: 200%;
+}
+
+nav ul li a:hover {
+background-position: right;
+transition-duration: 1s;
+color:red;
+}
+
+nav ul li a:hover::before {
+background-position: right;
+transition-duration: 1s;
+}
+
+
+nav ul li a:hover::active {
+transform: scale(0.95);
+}
+
+
+
+
+
+
+nav #lr {
+    background: rgb(34, 252, 114);
+}
+
+
+
+
+
+.register-btn {
+    padding: 10px 20px;
+    background-color: #1A2238;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #e64a19;
+}
+
+.hero {
+    display: flex;
+    padding: 50px;
+    background: transparent;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 50vh;
+
+}
+
+
+
+
+.hero-text {
+    max-width: 50%;
+    color: white;
+}
+
+.hero-text p:first-child {
+    color: #fffb03;
+    font-size: 1.2em;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin: 10px 0;
+}
+
+.hero-text h1 span {
+    color: #ff5722;
+    font-size: 48px;
+}
+
+.hero-text p:last-child {
+    color: #ffffff;
+    margin: 20px 0;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.mbtn {
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 17px;
+}
+
+.mbtn-primary {
+    background-color: #ff5722;
+    color: #fff;
+}
+
+.mbtn-primary:hover {
+    background-color: #ffffff;
+    color: blue;
+    font-weight: bolder;
+    border-style: groove;
+
+}
+
+.mbtn-secondary {
+    background-color: #333;
+    color: #fff;
+}
+
+.mbtn-secondary:hover {
+    background-color: #eccfcf;
+    font-weight: bolder;
+    color: navy;
+}
+
+.hero-image img {
+    max-width: 100%;
+    margin-left: 150px;
+    filter: drop-shadow(10px 10px 20px rgb(255, 238, 238));
+}
+
+
+.containel {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 680px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(255, 90, 90);
+    position: relative;
+    overflow: hidden;
+    margin: 20px 10px 1px 420px;
+}
+
+
+
+
+
+
+.form-containel {
+    width: 100%;
+}
+
+.form-body {
+    display: flex;
+    width: 100%;
+    transition: 0.3s ease;
+    transform: translateX(0%);
+}
+
+.form {
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+
+.form-containel {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    /* Fixed height for the form container */
+}
+
+.form-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.toggle-btl {
+    width: 50%;
+    padding: 10px 0;
+    background: none;
+    color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.toggle-btl:hover,
+.toggle-btl.active {
+    border-bottom: none;
+    background: white;
+    color: blue;
+    font-weight: bold;
+}
+
+.form-body {
+    display: flex;
+    width: 200%;
+    transition: 0.3s ease;
+    transform: translateX(0%);
+    height: 100%;
+    /* Ensure both forms take up the full height of the container */
+}
+
+.form {
+    width: 50%;
+    padding: 30px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    height: 100%;
+    /* Set height to match the container */
+    transition: height 0.3s ease;
+    overflow-y: auto;
+    /* Enable vertical scroll if content exceeds height */
+}
+
+#signup-form {
+    max-height: 400px;
+    /* Set a max-height for the sign-up form */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+}
+
+.form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2575fc;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #2575fc;
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btl:hover {
+    background-color: #46fa2a;
+    color: rgb(27, 6, 207);
+    font-weight: bolder;
+    font-size: large;
+    border: 1px solid red;
+    text-transform: uppercase;
+}
+
+.form-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.form-text span {
+    font-size: 20px;
+    color: #2575fc;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.dropdown-container {
+    margin: 20px 0;
+}
+
+.styled-select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f8f8f8;
+}
+
+.styled-select:focus {
+    border-color: #2575fc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+}
+
+
+#signup-form label[for="cpwd"],
+#signup-form input[type="radio"] {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    background-color: #46fa2a;
+}
+
+
+#signup-form input[type="radio"] {
+    margin-left: 20px;
+}
+
+/* Hobbies Checkboxes */
+#signup-form label[for="hobbies"],
+#signup-form input[type="checkbox"],
+#signup-form label[for="hobby1"],
+#signup-form label[for="hobby2"],
+#signup-form label[for="hobby3"],
+#signup-form label[for="driver"] {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#signup-form input[type="checkbox"] {
+    margin-left: 10px;
+}
